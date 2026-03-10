@@ -26,7 +26,7 @@ public class HttpTrigger1Function
         name ??= data?.name;
         string responseMessage = string.IsNullOrEmpty(name)
             ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
-            : $"Hello, {name}. This HTTP triggered function executed successfully. With some changes to test the CI/CD pipeline.";
+            : $"Hello, {name}. This HTTP triggered function executed successfully.  Creating a branch and committing changes to test the CI/CD pipeline.";
 
         return new OkObjectResult(responseMessage);
     }
